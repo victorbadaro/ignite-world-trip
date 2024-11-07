@@ -1,4 +1,9 @@
 import { Box, Center, Divider, Flex, Heading, Text, VStack } from '@chakra-ui/react';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import { Navigation, Pagination } from 'swiper/modules';
+import { Swiper, SwiperSlide } from 'swiper/react';
 
 export default function Home() {
 	return (
@@ -61,6 +66,22 @@ export default function Home() {
 					<br />
 					Então escolha seu continente
 				</Text>
+
+				<Swiper
+					pagination={{
+						clickable: true
+					}}
+					modules={[Pagination, Navigation]}
+					navigation
+					loop
+				>
+					<SwiperSlide>América do Norte</SwiperSlide>
+					<SwiperSlide>América do Sul</SwiperSlide>
+					<SwiperSlide>Ásia</SwiperSlide>
+					<SwiperSlide>África</SwiperSlide>
+					<SwiperSlide>Europa</SwiperSlide>
+					<SwiperSlide>Oceania</SwiperSlide>
+				</Swiper>
 			</Box>
 		</Box>
 	);
