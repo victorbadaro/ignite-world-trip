@@ -23,7 +23,7 @@ export default function Home() {
 				</Flex>
 			</Flex>
 
-			<Box mx="auto" mt="114px" maxW="1160px">
+			<Box mx="auto" mt="114px" mb="52px" maxW="1160px">
 				<Flex align="center" justify="space-between">
 					<Flex flexDir="column" align="center" gap="6">
 						<img src="/images/cocktail.svg" alt="Cocktail" />
@@ -57,15 +57,15 @@ export default function Home() {
 					</Box>
 				</Center>
 
-				<Text my="52px" fontWeight="medium" fontSize="4xl" textAlign="center">
+				<Text mt="52px" fontWeight="medium" fontSize="4xl" textAlign="center">
 					Vamos nessa?
 					<br />
 					Então escolha seu continente
 				</Text>
+			</Box>
 
-				<Box h="450px">
-					<Slider />
-				</Box>
+			<Box mx="auto" maxW="1240px" h="450px">
+				<Slider />
 			</Box>
 		</Box>
 	);
