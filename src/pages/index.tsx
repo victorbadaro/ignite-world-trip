@@ -1,13 +1,9 @@
 import { Box, Center, Divider, Flex, Heading, Text, VStack } from '@chakra-ui/react';
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
-import { Navigation, Pagination } from 'swiper/modules';
-import { Swiper, SwiperSlide } from 'swiper/react';
+import { Slider } from '../components/slider';
 
 export default function Home() {
 	return (
-		<Box>
+		<Box pb="10">
 			<Flex align="flex-end" mx="auto" maxW="1440px" h="335px" bgImage="/images/Background.png" bgRepeat="no-repeat" bgColor="yellow.500">
 				<Flex flex="1" align="flex-start" justify="space-between" mx="auto" mb="-33px" maxW="1160px">
 					<VStack spacing="5" align="flex-start" mt="27px" maxW="524px">
@@ -55,33 +51,21 @@ export default function Home() {
 					</Flex>
 				</Flex>
 
-				<Center mt="20" mb="52px">
+				<Center mt="20">
 					<Box w="90px">
 						<Divider borderWidth="1px" borderColor="gray.800" />
 					</Box>
 				</Center>
 
-				<Text fontWeight="medium" fontSize="4xl" textAlign="center">
+				<Text my="52px" fontWeight="medium" fontSize="4xl" textAlign="center">
 					Vamos nessa?
 					<br />
 					Então escolha seu continente
 				</Text>
 
-				<Swiper
-					pagination={{
-						clickable: true
-					}}
-					modules={[Pagination, Navigation]}
-					navigation
-					loop
-				>
-					<SwiperSlide>América do Norte</SwiperSlide>
-					<SwiperSlide>América do Sul</SwiperSlide>
-					<SwiperSlide>Ásia</SwiperSlide>
-					<SwiperSlide>África</SwiperSlide>
-					<SwiperSlide>Europa</SwiperSlide>
-					<SwiperSlide>Oceania</SwiperSlide>
-				</Swiper>
+				<Box h="450px">
+					<Slider />
+				</Box>
 			</Box>
 		</Box>
 	);
