@@ -1,7 +1,7 @@
+import { Flex, Heading, Image, Text, VStack } from '@chakra-ui/react';
 import { Navigation, Pagination } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
-import { Flex, Heading, Text, VStack } from '@chakra-ui/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
@@ -17,7 +17,10 @@ export function Slider() {
 			loop
 		>
 			<SwiperSlide>
-				<img
+				<Image
+					w="100%"
+					h="100%"
+					objectFit="cover"
 					src="https://images.unsplash.com/photo-1490642914619-7955a3fd483c?q=80&w=1786&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
 					alt="Europa"
 				/>
@@ -33,7 +36,10 @@ export function Slider() {
 				</Flex>
 			</SwiperSlide>
 			<SwiperSlide>
-				<img
+				<Image
+					w="100%"
+					h="100%"
+					objectFit="cover"
 					src="https://images.unsplash.com/photo-1699689940779-4624e64a31a0?q=80&w=1732&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
 					alt="América do Norte"
 				/>
@@ -49,7 +55,10 @@ export function Slider() {
 				</Flex>
 			</SwiperSlide>
 			<SwiperSlide>
-				<img
+				<Image
+					w="100%"
+					h="100%"
+					objectFit="cover"
 					src="https://images.unsplash.com/photo-1547920295-ecea779c2a24?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
 					alt="América do Sul"
 				/>
@@ -65,7 +74,10 @@ export function Slider() {
 				</Flex>
 			</SwiperSlide>
 			<SwiperSlide>
-				<img
+				<Image
+					w="100%"
+					h="100%"
+					objectFit="cover"
 					src="https://images.unsplash.com/photo-1562749076-4fd06fc26134?q=80&w=1950&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
 					alt="Ásia"
 				/>
@@ -81,7 +93,10 @@ export function Slider() {
 				</Flex>
 			</SwiperSlide>
 			<SwiperSlide>
-				<img
+				<Image
+					w="100%"
+					h="100%"
+					objectFit="cover"
 					src="https://images.unsplash.com/photo-1580060839134-75a5edca2e99?q=80&w=1742&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
 					alt="África"
 				/>
@@ -97,7 +112,10 @@ export function Slider() {
 				</Flex>
 			</SwiperSlide>
 			<SwiperSlide>
-				<img
+				<Image
+					w="100%"
+					h="100%"
+					objectFit="cover"
 					src="https://images.unsplash.com/photo-1656177054067-e18d932a7ee7?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
 					alt="Oceania"
 				/>
