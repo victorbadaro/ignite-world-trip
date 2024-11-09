@@ -1,4 +1,4 @@
-import { Box, Center, Divider, Flex, Heading, Text, VStack } from '@chakra-ui/react';
+import { Box, Center, Divider, Flex, Heading, Image, Text, VStack } from '@chakra-ui/react';
 import { Slider } from '../components/slider';
 
 export default function Home() {
@@ -18,7 +18,7 @@ export default function Home() {
 					</VStack>
 
 					<Box>
-						<img src="/images/Airplane.svg" alt="Airplane" />
+						<Image src="/images/Airplane.svg" alt="Airplane" />
 					</Box>
 				</Flex>
 			</Flex>
@@ -26,25 +26,25 @@ export default function Home() {
 			<Box mx="auto" mt="114px" mb="52px" maxW="1160px">
 				<Flex align="center" justify="space-between">
 					<Flex flexDir="column" align="center" gap="6">
-						<img src="/images/cocktail.svg" alt="Cocktail" />
+						<Image src="/images/cocktail.svg" alt="Cocktail" />
 						<Text fontWeight="semibold" fontSize="2xl">
 							vida noturna
 						</Text>
 					</Flex>
 					<Flex flexDir="column" align="center" gap="6">
-						<img src="/images/surf.svg" alt="Cocktail" />
+						<Image src="/images/surf.svg" alt="Cocktail" />
 						<Text fontWeight="semibold" fontSize="2xl">
 							praia
 						</Text>
 					</Flex>
 					<Flex flexDir="column" align="center" gap="6">
-						<img src="/images/building.svg" alt="Cocktail" />
+						<Image src="/images/building.svg" alt="Cocktail" />
 						<Text fontWeight="semibold" fontSize="2xl">
 							moderno
 						</Text>
 					</Flex>
 					<Flex flexDir="column" align="center" gap="6">
-						<img src="/images/museum.svg" alt="Cocktail" />
+						<Image src="/images/museum.svg" alt="Cocktail" />
 						<Text fontWeight="semibold" fontSize="2xl">
 							clássico
 						</Text>
