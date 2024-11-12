@@ -1,5 +1,6 @@
 import { Box, Flex, Heading, Image, SimpleGrid, Text, Tooltip } from '@chakra-ui/react';
 import { FiInfo } from 'react-icons/fi';
+import { CityListItem } from '../components/city-list-item';
 
 export default function Continent() {
 	return (
@@ -66,7 +67,38 @@ export default function Continent() {
 					<Heading fontSize="4xl" fontWeight="medium">
 						Cidades +100
 					</Heading>
-					<SimpleGrid mt="10"></SimpleGrid>
+					<SimpleGrid mt="10" columnGap="45px" rowGap="12" minChildWidth="256px">
+						<CityListItem
+							cityName="Londres"
+							cityImageUrl="https://images.unsplash.com/photo-1533929736458-ca588d08c8be?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+							countryName="Reino Unido"
+							countryFlagImageUrl="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Flag_of_the_United_Kingdom_%281-2%29.svg/1200px-Flag_of_the_United_Kingdom_%281-2%29.svg.png"
+						/>
+						<CityListItem
+							cityName="Paris"
+							cityImageUrl="https://images.unsplash.com/photo-1522093007474-d86e9bf7ba6f?q=80&w=1600&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+							countryName="França"
+							countryFlagImageUrl="https://upload.wikimedia.org/wikipedia/commons/b/bc/Flag_of_France_%281794%E2%80%931815%2C_1830%E2%80%931974%2C_2020%E2%80%93present%29.svg"
+						/>
+						<CityListItem
+							cityName="Roma"
+							cityImageUrl="https://images.unsplash.com/photo-1708589101232-efbd1cf98673?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+							countryName="Itália"
+							countryFlagImageUrl="https://upload.wikimedia.org/wikipedia/commons/0/03/Flag_of_Italy.svg"
+						/>
+						<CityListItem
+							cityName="Praga"
+							cityImageUrl="https://images.unsplash.com/photo-1688632286765-a01e86c11c78?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+							countryName="República Tcheca"
+							countryFlagImageUrl="https://upload.wikimedia.org/wikipedia/commons/c/cb/Flag_of_the_Czech_Republic.svg"
+						/>
+						<CityListItem
+							cityName="Amsterdã"
+							cityImageUrl="https://images.unsplash.com/photo-1534351590666-13e3e96b5017?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+							countryName="Holanda"
+							countryFlagImageUrl="https://upload.wikimedia.org/wikipedia/commons/2/20/Flag_of_the_Netherlands.svg"
+						/>
+					</SimpleGrid>
 				</Box>
 			</Box>
 		</Box>
