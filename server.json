@@ -4,37 +4,339 @@
 			"id": 1,
 			"name": "Europa",
 			"description": "O continente mais antigo.",
-			"imageUrl": "https://images.unsplash.com/photo-1490642914619-7955a3fd483c?q=80&w=1786&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+			"imageUrl": "https://images.unsplash.com/photo-1490642914619-7955a3fd483c?q=80&w=1786&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+			"mostVisitedCities": [
+				{
+					"city": "Paris",
+					"country": "França",
+					"countryFlagUrl": "https://flagcdn.com/w320/fr.png"
+				},
+				{
+					"city": "Berlim",
+					"country": "Alemanha",
+					"countryFlagUrl": "https://flagcdn.com/w320/de.png"
+				},
+				{
+					"city": "Roma",
+					"country": "Itália",
+					"countryFlagUrl": "https://flagcdn.com/w320/it.png"
+				},
+				{
+					"city": "Londres",
+					"country": "Reino Unido",
+					"countryFlagUrl": "https://flagcdn.com/w320/gb.png"
+				},
+				{
+					"city": "Madri",
+					"country": "Espanha",
+					"countryFlagUrl": "https://flagcdn.com/w320/es.png"
+				},
+				{
+					"city": "Lisboa",
+					"country": "Portugal",
+					"countryFlagUrl": "https://flagcdn.com/w320/pt.png"
+				},
+				{
+					"city": "Amsterdã",
+					"country": "Países Baixos",
+					"countryFlagUrl": "https://flagcdn.com/w320/nl.png"
+				},
+				{
+					"city": "Viena",
+					"country": "Áustria",
+					"countryFlagUrl": "https://flagcdn.com/w320/at.png"
+				},
+				{
+					"city": "Copenhague",
+					"country": "Dinamarca",
+					"countryFlagUrl": "https://flagcdn.com/w320/dk.png"
+				}
+			]
 		},
 		{
 			"id": 2,
 			"name": "América do Norte",
 			"description": "O novo mundo.",
-			"imageUrl": "https://images.unsplash.com/photo-1699689940779-4624e64a31a0?q=80&w=1732&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+			"imageUrl": "https://images.unsplash.com/photo-1699689940779-4624e64a31a0?q=80&w=1732&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+			"mostVisitedCities": [
+				{
+					"city": "Nova York",
+					"country": "Estados Unidos",
+					"countryFlagUrl": "https://flagcdn.com/w320/us.png"
+				},
+				{
+					"city": "Toronto",
+					"country": "Canadá",
+					"countryFlagUrl": "https://flagcdn.com/w320/ca.png"
+				},
+				{
+					"city": "Cidade do México",
+					"country": "México",
+					"countryFlagUrl": "https://flagcdn.com/w320/mx.png"
+				},
+				{
+					"city": "Los Angeles",
+					"country": "Estados Unidos",
+					"countryFlagUrl": "https://flagcdn.com/w320/us.png"
+				},
+				{
+					"city": "Chicago",
+					"country": "Estados Unidos",
+					"countryFlagUrl": "https://flagcdn.com/w320/us.png"
+				},
+				{
+					"city": "Houston",
+					"country": "Estados Unidos",
+					"countryFlagUrl": "https://flagcdn.com/w320/us.png"
+				},
+				{
+					"city": "Miami",
+					"country": "Estados Unidos",
+					"countryFlagUrl": "https://flagcdn.com/w320/us.png"
+				},
+				{
+					"city": "Dallas",
+					"country": "Estados Unidos",
+					"countryFlagUrl": "https://flagcdn.com/w320/us.png"
+				},
+				{
+					"city": "Boston",
+					"country": "Estados Unidos",
+					"countryFlagUrl": "https://flagcdn.com/w320/us.png"
+				},
+				{
+					"city": "São Francisco",
+					"country": "Estados Unidos",
+					"countryFlagUrl": "https://flagcdn.com/w320/us.png"
+				}
+			]
 		},
 		{
 			"id": 3,
 			"name": "América do Sul",
 			"description": "O coração vibrante do mundo.",
-			"imageUrl": "https://images.unsplash.com/photo-1547920295-ecea779c2a24?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+			"imageUrl": "https://images.unsplash.com/photo-1547920295-ecea779c2a24?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+			"mostVisitedCities": [
+				{
+					"city": "São Paulo",
+					"country": "Brasil",
+					"countryFlagUrl": "https://flagcdn.com/w320/br.png"
+				},
+				{
+					"city": "Buenos Aires",
+					"country": "Argentina",
+					"countryFlagUrl": "https://flagcdn.com/w320/ar.png"
+				},
+				{
+					"city": "Bogotá",
+					"country": "Colômbia",
+					"countryFlagUrl": "https://flagcdn.com/w320/co.png"
+				},
+				{
+					"city": "Lima",
+					"country": "Peru",
+					"countryFlagUrl": "https://flagcdn.com/w320/pe.png"
+				},
+				{
+					"city": "Caracas",
+					"country": "Venezuela",
+					"countryFlagUrl": "https://flagcdn.com/w320/ve.png"
+				},
+				{
+					"city": "Santiago",
+					"country": "Chile",
+					"countryFlagUrl": "https://flagcdn.com/w320/cl.png"
+				},
+				{
+					"city": "Montevidéu",
+					"country": "Uruguai",
+					"countryFlagUrl": "https://flagcdn.com/w320/uy.png"
+				},
+				{
+					"city": "Assunção",
+					"country": "Paraguai",
+					"countryFlagUrl": "https://flagcdn.com/w320/py.png"
+				},
+				{
+					"city": "Quito",
+					"country": "Equador",
+					"countryFlagUrl": "https://flagcdn.com/w320/ec.png"
+				},
+				{
+					"city": "La Paz",
+					"country": "Bolívia",
+					"countryFlagUrl": "https://flagcdn.com/w320/bo.png"
+				}
+			]
 		},
 		{
 			"id": 4,
 			"name": "Ásia",
 			"description": "A alma do mundo em cada horizonte.",
-			"imageUrl": "https://images.unsplash.com/photo-1562749076-4fd06fc26134?q=80&w=1950&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+			"imageUrl": "https://images.unsplash.com/photo-1562749076-4fd06fc26134?q=80&w=1950&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+			"mostVisitedCities": [
+				{
+					"city": "Tóquio",
+					"country": "Japão",
+					"countryFlagUrl": "https://flagcdn.com/w320/jp.png"
+				},
+				{
+					"city": "Mumbai",
+					"country": "Índia",
+					"countryFlagUrl": "https://flagcdn.com/w320/in.png"
+				},
+				{
+					"city": "Seul",
+					"country": "Coreia do Sul",
+					"countryFlagUrl": "https://flagcdn.com/w320/kr.png"
+				},
+				{
+					"city": "Pequim",
+					"country": "China",
+					"countryFlagUrl": "https://flagcdn.com/w320/cn.png"
+				},
+				{
+					"city": "Bangcoc",
+					"country": "Tailândia",
+					"countryFlagUrl": "https://flagcdn.com/w320/th.png"
+				},
+				{
+					"city": "Manila",
+					"country": "Filipinas",
+					"countryFlagUrl": "https://flagcdn.com/w320/ph.png"
+				},
+				{
+					"city": "Jacarta",
+					"country": "Indonésia",
+					"countryFlagUrl": "https://flagcdn.com/w320/id.png"
+				},
+				{
+					"city": "Singapura",
+					"country": "Singapura",
+					"countryFlagUrl": "https://flagcdn.com/w320/sg.png"
+				},
+				{
+					"city": "Hanói",
+					"country": "Vietnã",
+					"countryFlagUrl": "https://flagcdn.com/w320/vn.png"
+				},
+				{
+					"city": "Teerã",
+					"country": "Irã",
+					"countryFlagUrl": "https://flagcdn.com/w320/ir.png"
+				}
+			]
 		},
 		{
 			"id": 5,
 			"name": "África",
 			"description": "Terra de origens, rica em almas e sonhos.",
-			"imageUrl": "https://images.unsplash.com/photo-1580060839134-75a5edca2e99?q=80&w=1742&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+			"imageUrl": "https://images.unsplash.com/photo-1580060839134-75a5edca2e99?q=80&w=1742&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+			"mostVisitedCities": [
+				{
+					"city": "Cairo",
+					"country": "Egito",
+					"countryFlagUrl": "https://flagcdn.com/w320/eg.png"
+				},
+				{
+					"city": "Nairóbi",
+					"country": "Quênia",
+					"countryFlagUrl": "https://flagcdn.com/w320/ke.png"
+				},
+				{
+					"city": "Casablanca",
+					"country": "Marrocos",
+					"countryFlagUrl": "https://flagcdn.com/w320/ma.png"
+				},
+				{
+					"city": "Cidade do Cabo",
+					"country": "África do Sul",
+					"countryFlagUrl": "https://flagcdn.com/w320/za.png"
+				},
+				{
+					"city": "Acra",
+					"country": "Gana",
+					"countryFlagUrl": "https://flagcdn.com/w320/gh.png"
+				},
+				{
+					"city": "Lagos",
+					"country": "Nigéria",
+					"countryFlagUrl": "https://flagcdn.com/w320/ng.png"
+				},
+				{
+					"city": "Addis Abeba",
+					"country": "Etiópia",
+					"countryFlagUrl": "https://flagcdn.com/w320/et.png"
+				},
+				{
+					"city": "Pretória",
+					"country": "África do Sul",
+					"countryFlagUrl": "https://flagcdn.com/w320/za.png"
+				},
+				{
+					"city": "Harare",
+					"country": "Zimbábue",
+					"countryFlagUrl": "https://flagcdn.com/w320/zw.png"
+				},
+				{
+					"city": "Kinshasa",
+					"country": "República Democrática do Congo",
+					"countryFlagUrl": "https://flagcdn.com/w320/cd.png"
+				}
+			]
 		},
 		{
 			"id": 6,
 			"name": "Oceania",
 			"description": "Onde o horizonte toca o infinito.",
-			"imageUrl": "https://images.unsplash.com/photo-1656177054067-e18d932a7ee7?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+			"imageUrl": "https://images.unsplash.com/photo-1656177054067-e18d932a7ee7?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+			"mostVisitedCities": [
+				{
+					"city": "Sydney",
+					"country": "Austrália",
+					"countryFlagUrl": "https://flagcdn.com/w320/au.png"
+				},
+				{
+					"city": "Auckland",
+					"country": "Nova Zelândia",
+					"countryFlagUrl": "https://flagcdn.com/w320/nz.png"
+				},
+				{
+					"city": "Melbourne",
+					"country": "Austrália",
+					"countryFlagUrl": "https://flagcdn.com/w320/au.png"
+				},
+				{
+					"city": "Brisbane",
+					"country": "Austrália",
+					"countryFlagUrl": "https://flagcdn.com/w320/au.png"
+				},
+				{
+					"city": "Suva",
+					"country": "Fiji",
+					"countryFlagUrl": "https://flagcdn.com/w320/fj.png"
+				},
+				{
+					"city": "Wellington",
+					"country": "Nova Zelândia",
+					"countryFlagUrl": "https://flagcdn.com/w320/nz.png"
+				},
+				{
+					"city": "Canberra",
+					"country": "Austrália",
+					"countryFlagUrl": "https://flagcdn.com/w320/au.png"
+				},
+				{
+					"city": "Noumea",
+					"country": "Nova Caledônia",
+					"countryFlagUrl": "https://flagcdn.com/w320/nc.png"
+				},
+				{
+					"city": "Port Moresby",
+					"country": "Papua-Nova Guiné",
+					"countryFlagUrl": "https://flagcdn.com/w320/pg.png"
+				}
+			]
 		}
 	]
 }

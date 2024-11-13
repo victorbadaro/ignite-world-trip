@@ -18,7 +18,7 @@ export default function Home({ continents }: InferGetStaticPropsType<typeof getS
 				<Flex flex="1" align="flex-start" justify="space-between" mx="auto" mb="-33px" maxW="1160px">
 					<VStack spacing="5" align="flex-start" mt="27px" maxW="524px">
 						<Heading fontWeight="medium" color="gray.100">
-							5 Continentes,
+							6 Continentes,
 							<br />
 							infinitas possibilidades.
 						</Heading>
