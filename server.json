@@ -4,52 +4,82 @@
 			"id": "europe",
 			"name": "Europa",
 			"description": "O continente mais antigo.",
+			"about": "A Europa é, por convenção, um dos seis continentes do mundo. Compreendendo a península ocidental da Eurásia, a Europa geralmente divide-se da Ásia a leste pela divisória de águas dos montes Urais, o rio Ural, o mar Cáspio, o Cáucaso, e o mar Negro a sudeste",
+			"countriesCount": 44,
+			"languagesCount": 200,
 			"imageUrl": "https://images.unsplash.com/photo-1490642914619-7955a3fd483c?q=80&w=1786&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
 			"mostVisitedCities": [
 				{
-					"city": "Paris",
-					"country": "França",
-					"countryFlagUrl": "https://flagcdn.com/w320/fr.png"
+					"name": "Paris",
+					"imageUrl": "https://images.unsplash.com/photo-1522093007474-d86e9bf7ba6f?q=80&w=1600&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+					"country": {
+						"name": "França",
+						"flagUrl": "https://flagcdn.com/w320/fr.png"
+					}
 				},
 				{
-					"city": "Berlim",
-					"country": "Alemanha",
-					"countryFlagUrl": "https://flagcdn.com/w320/de.png"
+					"name": "Berlim",
+					"imageUrl": "https://plus.unsplash.com/premium_photo-1694475085892-3bb718a2bc05?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+					"country": {
+						"name": "Alemanha",
+						"flagUrl": "https://flagcdn.com/w320/de.png"
+					}
 				},
 				{
-					"city": "Roma",
-					"country": "Itália",
-					"countryFlagUrl": "https://flagcdn.com/w320/it.png"
+					"name": "Roma",
+					"imageUrl": "https://images.unsplash.com/photo-1708589101232-efbd1cf98673?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+					"country": {
+						"name": "Itália",
+						"flagUrl": "https://flagcdn.com/w320/it.png"
+					}
 				},
 				{
-					"city": "Londres",
-					"country": "Reino Unido",
-					"countryFlagUrl": "https://flagcdn.com/w320/gb.png"
+					"name": "Londres",
+					"imageUrl": "https://images.unsplash.com/photo-1533929736458-ca588d08c8be?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+					"country": {
+						"name": "Reino Unido",
+						"flagUrl": "https://flagcdn.com/w320/gb.png"
+					}
 				},
 				{
-					"city": "Madri",
-					"country": "Espanha",
-					"countryFlagUrl": "https://flagcdn.com/w320/es.png"
+					"name": "Madri",
+					"imageUrl": "https://plus.unsplash.com/premium_photo-1697729496343-32e85c0793f0?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+					"country": {
+						"name": "Espanha",
+						"flagUrl": "https://flagcdn.com/w320/es.png"
+					}
 				},
 				{
-					"city": "Lisboa",
-					"country": "Portugal",
-					"countryFlagUrl": "https://flagcdn.com/w320/pt.png"
+					"name": "Lisboa",
+					"imageUrl": "https://images.unsplash.com/photo-1603284984942-1a9202a437af?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+					"country": {
+						"name": "Portugal",
+						"flagUrl": "https://flagcdn.com/w320/pt.png"
+					}
 				},
 				{
-					"city": "Amsterdã",
-					"country": "Países Baixos",
-					"countryFlagUrl": "https://flagcdn.com/w320/nl.png"
+					"name": "Amsterdã",
+					"imageUrl": "https://images.unsplash.com/photo-1534351590666-13e3e96b5017?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+					"country": {
+						"name": "Países Baixos",
+						"flagUrl": "https://flagcdn.com/w320/nl.png"
+					}
 				},
 				{
-					"city": "Viena",
-					"country": "Áustria",
-					"countryFlagUrl": "https://flagcdn.com/w320/at.png"
+					"name": "Viena",
+					"imageUrl": "https://plus.unsplash.com/premium_photo-1661925387774-b1ba6b7bb0ad?q=80&w=2061&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+					"country": {
+						"name": "Áustria",
+						"flagUrl": "https://flagcdn.com/w320/at.png"
+					}
 				},
 				{
-					"city": "Copenhague",
-					"country": "Dinamarca",
-					"countryFlagUrl": "https://flagcdn.com/w320/dk.png"
+					"name": "Copenhague",
+					"imageUrl": "https://plus.unsplash.com/premium_photo-1697730017462-b99adb09466f?q=80&w=2072&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+					"country": {
+						"name": "Dinamarca",
+						"flagUrl": "https://flagcdn.com/w320/dk.png"
+					}
 				}
 			]
 		},
@@ -57,57 +87,90 @@
 			"id": "north_america",
 			"name": "América do Norte",
 			"description": "O novo mundo.",
+			"about": "A América do Norte é um dos seis continentes e forma a porção norte das Américas. Delimitada pelos oceanos Atlântico a leste, Pacífico a oeste e Ártico ao norte, a América do Norte faz fronteira ao sul com a América Central. Conhecida por sua geografia variada, incluindo grandes cadeias de montanhas, planícies e florestas, a América do Norte é o lar de uma rica história cultural, desde as civilizações indígenas até as influências modernas.",
+			"countriesCount": 23,
+			"languagesCount": 300,
 			"imageUrl": "https://images.unsplash.com/photo-1699689940779-4624e64a31a0?q=80&w=1732&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
 			"mostVisitedCities": [
 				{
-					"city": "Nova York",
-					"country": "Estados Unidos",
-					"countryFlagUrl": "https://flagcdn.com/w320/us.png"
+					"name": "Nova York",
+					"imageUrl": "https://images.unsplash.com/photo-1516893842880-5d8aada7ac05?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+					"country": {
+						"name": "Estados Unidos",
+						"flagUrl": "https://flagcdn.com/w320/us.png"
+					}
 				},
 				{
-					"city": "Toronto",
-					"country": "Canadá",
-					"countryFlagUrl": "https://flagcdn.com/w320/ca.png"
+					"name": "Toronto",
+					"imageUrl": "https://images.unsplash.com/photo-1503206557829-9a9979ad1227?q=80&w=1925&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+					"country": {
+						"name": "Canadá",
+						"flagUrl": "https://flagcdn.com/w320/ca.png"
+					}
 				},
 				{
-					"city": "Cidade do México",
-					"country": "México",
-					"countryFlagUrl": "https://flagcdn.com/w320/mx.png"
+					"name": "Cidade do México",
+					"imageUrl": "https://images.unsplash.com/photo-1614805265737-8b69e6eed0b4?q=80&w=1950&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+					"country": {
+						"name": "México",
+						"flagUrl": "https://flagcdn.com/w320/mx.png"
+					}
 				},
 				{
-					"city": "Los Angeles",
-					"country": "Estados Unidos",
-					"countryFlagUrl": "https://flagcdn.com/w320/us.png"
+					"name": "Los Angeles",
+					"imageUrl": "https://plus.unsplash.com/premium_photo-1725408106567-a77bd9beff7c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+					"country": {
+						"name": "Estados Unidos",
+						"flagUrl": "https://flagcdn.com/w320/us.png"
+					}
 				},
 				{
-					"city": "Chicago",
-					"country": "Estados Unidos",
-					"countryFlagUrl": "https://flagcdn.com/w320/us.png"
+					"name": "Chicago",
+					"imageUrl": "https://images.unsplash.com/photo-1494522855154-9297ac14b55f?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+					"country": {
+						"name": "Estados Unidos",
+						"flagUrl": "https://flagcdn.com/w320/us.png"
+					}
 				},
 				{
-					"city": "Houston",
-					"country": "Estados Unidos",
-					"countryFlagUrl": "https://flagcdn.com/w320/us.png"
+					"name": "Houston",
+					"imageUrl": "https://plus.unsplash.com/premium_photo-1694475111397-7d2170cf6e8d?q=80&w=2072&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+					"country": {
+						"name": "Estados Unidos",
+						"flagUrl": "https://flagcdn.com/w320/us.png"
+					}
 				},
 				{
-					"city": "Miami",
-					"country": "Estados Unidos",
-					"countryFlagUrl": "https://flagcdn.com/w320/us.png"
+					"name": "Miami",
+					"imageUrl": "https://plus.unsplash.com/premium_photo-1697730215093-baeae8060bfe?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+					"country": {
+						"name": "Estados Unidos",
+						"flagUrl": "https://flagcdn.com/w320/us.png"
+					}
 				},
 				{
-					"city": "Dallas",
-					"country": "Estados Unidos",
-					"countryFlagUrl": "https://flagcdn.com/w320/us.png"
+					"name": "Dallas",
+					"imageUrl": "https://plus.unsplash.com/premium_photo-1697729753410-667607f7afd4?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+					"country": {
+						"name": "Estados Unidos",
+						"flagUrl": "https://flagcdn.com/w320/us.png"
+					}
 				},
 				{
-					"city": "Boston",
-					"country": "Estados Unidos",
-					"countryFlagUrl": "https://flagcdn.com/w320/us.png"
+					"name": "Boston",
+					"imageUrl": "https://images.unsplash.com/photo-1531874668635-85a25b7279a2?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+					"country": {
+						"name": "Estados Unidos",
+						"flagUrl": "https://flagcdn.com/w320/us.png"
+					}
 				},
 				{
-					"city": "São Francisco",
-					"country": "Estados Unidos",
-					"countryFlagUrl": "https://flagcdn.com/w320/us.png"
+					"name": "São Francisco",
+					"imageUrl": "https://images.unsplash.com/photo-1719858403455-9a2582eca805?q=80&w=1899&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+					"country": {
+						"name": "Estados Unidos",
+						"flagUrl": "https://flagcdn.com/w320/us.png"
+					}
 				}
 			]
 		},
@@ -115,57 +178,90 @@
 			"id": "south_america",
 			"name": "América do Sul",
 			"description": "O coração vibrante do mundo.",
+			"about": "A América do Sul é um continente que ocupa a parte meridional das Américas. Limitada pelo Oceano Atlântico a leste e o Oceano Pacífico a oeste, o continente é caracterizado pela Cordilheira dos Andes, a vasta Floresta Amazônica e uma biodiversidade única. Com uma cultura rica e influências históricas que vão das civilizações pré-colombianas às influências europeias, a América do Sul se destaca pela diversidade natural e cultural.",
+			"countriesCount": 12,
+			"languagesCount": 450,
 			"imageUrl": "https://images.unsplash.com/photo-1547920295-ecea779c2a24?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
 			"mostVisitedCities": [
 				{
-					"city": "São Paulo",
-					"country": "Brasil",
-					"countryFlagUrl": "https://flagcdn.com/w320/br.png"
+					"name": "São Paulo",
+					"imageUrl": "https://images.unsplash.com/photo-1585150841312-c833091e593d?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+					"country": {
+						"name": "Brasil",
+						"flagUrl": "https://flagcdn.com/w320/br.png"
+					}
 				},
 				{
-					"city": "Buenos Aires",
-					"country": "Argentina",
-					"countryFlagUrl": "https://flagcdn.com/w320/ar.png"
+					"name": "Buenos Aires",
+					"imageUrl": "https://images.unsplash.com/photo-1679417302546-2c61d4e313f2?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+					"country": {
+						"name": "Argentina",
+						"flagUrl": "https://flagcdn.com/w320/ar.png"
+					}
 				},
 				{
-					"city": "Bogotá",
-					"country": "Colômbia",
-					"countryFlagUrl": "https://flagcdn.com/w320/co.png"
+					"name": "Bogotá",
+					"imageUrl": "https://plus.unsplash.com/premium_photo-1697729999190-4cd4ae78be26?q=80&w=1933&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+					"country": {
+						"name": "Colômbia",
+						"flagUrl": "https://flagcdn.com/w320/co.png"
+					}
 				},
 				{
-					"city": "Lima",
-					"country": "Peru",
-					"countryFlagUrl": "https://flagcdn.com/w320/pe.png"
+					"name": "Lima",
+					"imageUrl": "https://images.unsplash.com/photo-1729626127838-00f588d85c37?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+					"country": {
+						"name": "Peru",
+						"flagUrl": "https://flagcdn.com/w320/pe.png"
+					}
 				},
 				{
-					"city": "Caracas",
-					"country": "Venezuela",
-					"countryFlagUrl": "https://flagcdn.com/w320/ve.png"
+					"name": "Caracas",
+					"imageUrl": "https://images.unsplash.com/photo-1722271551043-fef6d612097d?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+					"country": {
+						"name": "Venezuela",
+						"flagUrl": "https://flagcdn.com/w320/ve.png"
+					}
 				},
 				{
-					"city": "Santiago",
-					"country": "Chile",
-					"countryFlagUrl": "https://flagcdn.com/w320/cl.png"
+					"name": "Santiago",
+					"imageUrl": "https://images.unsplash.com/photo-1689355515300-80bd2097db9b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+					"country": {
+						"name": "Chile",
+						"flagUrl": "https://flagcdn.com/w320/cl.png"
+					}
 				},
 				{
-					"city": "Montevidéu",
-					"country": "Uruguai",
-					"countryFlagUrl": "https://flagcdn.com/w320/uy.png"
+					"name": "Montevidéu",
+					"imageUrl": "https://images.unsplash.com/photo-1583270425012-1de82718620e?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+					"country": {
+						"name": "Uruguai",
+						"flagUrl": "https://flagcdn.com/w320/uy.png"
+					}
 				},
 				{
-					"city": "Assunção",
-					"country": "Paraguai",
-					"countryFlagUrl": "https://flagcdn.com/w320/py.png"
+					"name": "Assunção",
+					"imageUrl": "https://images.unsplash.com/photo-1636320808826-77448b85be66?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+					"country": {
+						"name": "Paraguai",
+						"flagUrl": "https://flagcdn.com/w320/py.png"
+					}
 				},
 				{
-					"city": "Quito",
-					"country": "Equador",
-					"countryFlagUrl": "https://flagcdn.com/w320/ec.png"
+					"name": "Quito",
+					"imageUrl": "https://images.unsplash.com/photo-1501684691657-cf3012635478?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+					"country": {
+						"name": "Equador",
+						"flagUrl": "https://flagcdn.com/w320/ec.png"
+					}
 				},
 				{
-					"city": "La Paz",
-					"country": "Bolívia",
-					"countryFlagUrl": "https://flagcdn.com/w320/bo.png"
+					"name": "La Paz",
+					"imageUrl": "https://images.unsplash.com/photo-1650700312125-f0dfe9063a42?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+					"country": {
+						"name": "Bolívia",
+						"flagUrl": "https://flagcdn.com/w320/bo.png"
+					}
 				}
 			]
 		},
@@ -173,57 +269,90 @@
 			"id": "asia",
 			"name": "Ásia",
 			"description": "A alma do mundo em cada horizonte.",
+			"about": "A Ásia é o maior dos seis continentes do mundo, abrangendo uma vasta área geográfica e cultural. Localizada a leste da Europa e ao norte da Oceania, a Ásia estende-se do Oceano Pacífico ao leste até os Montes Urais a oeste, e do Oceano Ártico ao norte até o Oceano Índico ao sul. Este continente diverso é lar de diversas civilizações antigas, abrigando as maiores populações e algumas das culturas mais influentes do mundo.",
+			"countriesCount": 49,
+			"languagesCount": 2000,
 			"imageUrl": "https://images.unsplash.com/photo-1562749076-4fd06fc26134?q=80&w=1950&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
 			"mostVisitedCities": [
 				{
-					"city": "Tóquio",
-					"country": "Japão",
-					"countryFlagUrl": "https://flagcdn.com/w320/jp.png"
+					"name": "Tóquio",
+					"imageUrl": "https://plus.unsplash.com/premium_photo-1661914240950-b0124f20a5c1?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+					"country": {
+						"name": "Japão",
+						"flagUrl": "https://flagcdn.com/w320/jp.png"
+					}
 				},
 				{
-					"city": "Mumbai",
-					"country": "Índia",
-					"countryFlagUrl": "https://flagcdn.com/w320/in.png"
+					"name": "Mumbai",
+					"imageUrl": "https://images.unsplash.com/photo-1601961405399-801fb1f34581?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+					"country": {
+						"name": "Índia",
+						"flagUrl": "https://flagcdn.com/w320/in.png"
+					}
 				},
 				{
-					"city": "Seul",
-					"country": "Coreia do Sul",
-					"countryFlagUrl": "https://flagcdn.com/w320/kr.png"
+					"name": "Seul",
+					"imageUrl": "https://images.unsplash.com/photo-1696943406927-8a9f4ce1503b?q=80&w=1776&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+					"country": {
+						"name": "Coreia do Sul",
+						"flagUrl": "https://flagcdn.com/w320/kr.png"
+					}
 				},
 				{
-					"city": "Pequim",
-					"country": "China",
-					"countryFlagUrl": "https://flagcdn.com/w320/cn.png"
+					"name": "Pequim",
+					"imageUrl": "https://images.unsplash.com/photo-1713173642147-30cbbdb176d5?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+					"country": {
+						"name": "China",
+						"flagUrl": "https://flagcdn.com/w320/cn.png"
+					}
 				},
 				{
-					"city": "Bangcoc",
-					"country": "Tailândia",
-					"countryFlagUrl": "https://flagcdn.com/w320/th.png"
+					"name": "Bangcoc",
+					"imageUrl": "https://plus.unsplash.com/premium_photo-1693149386423-2e4e264712e5?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+					"country": {
+						"name": "Tailândia",
+						"flagUrl": "https://flagcdn.com/w320/th.png"
+					}
 				},
 				{
-					"city": "Manila",
-					"country": "Filipinas",
-					"countryFlagUrl": "https://flagcdn.com/w320/ph.png"
+					"name": "Manila",
+					"imageUrl": "https://images.unsplash.com/photo-1591257773743-ea28737e33d9?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+					"country": {
+						"name": "Filipinas",
+						"flagUrl": "https://flagcdn.com/w320/ph.png"
+					}
 				},
 				{
-					"city": "Jacarta",
-					"country": "Indonésia",
-					"countryFlagUrl": "https://flagcdn.com/w320/id.png"
+					"name": "Jacarta",
+					"imageUrl": "https://images.unsplash.com/photo-1709879811940-c88f7eecc66c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+					"country": {
+						"name": "Indonésia",
+						"flagUrl": "https://flagcdn.com/w320/id.png"
+					}
 				},
 				{
-					"city": "Singapura",
-					"country": "Singapura",
-					"countryFlagUrl": "https://flagcdn.com/w320/sg.png"
+					"name": "Singapura",
+					"imageUrl": "https://images.unsplash.com/photo-1684073205587-d7539bf38db8?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+					"country": {
+						"name": "Singapura",
+						"flagUrl": "https://flagcdn.com/w320/sg.png"
+					}
 				},
 				{
-					"city": "Hanói",
-					"country": "Vietnã",
-					"countryFlagUrl": "https://flagcdn.com/w320/vn.png"
+					"name": "Hanói",
+					"imageUrl": "https://plus.unsplash.com/premium_photo-1691960159290-6f4ace6e6c4c?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+					"country": {
+						"name": "Vietnã",
+						"flagUrl": "https://flagcdn.com/w320/vn.png"
+					}
 				},
 				{
-					"city": "Teerã",
-					"country": "Irã",
-					"countryFlagUrl": "https://flagcdn.com/w320/ir.png"
+					"name": "Teerã",
+					"imageUrl": "https://plus.unsplash.com/premium_photo-1716721465414-c05196df7198?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+					"country": {
+						"name": "Irã",
+						"flagUrl": "https://flagcdn.com/w320/ir.png"
+					}
 				}
 			]
 		},
@@ -231,57 +360,90 @@
 			"id": "africa",
 			"name": "África",
 			"description": "Terra de origens, rica em almas e sonhos.",
+			"about": "A África é um dos seis continentes e é conhecida como o berço da humanidade. Localizada ao sul da Europa e separada da Ásia pelo Canal de Suez, a África é banhada pelos oceanos Atlântico e Índico e possui uma geografia diversa, que inclui desertos como o Saara, savanas, e regiões tropicais. Suas civilizações e culturas milenares oferecem um legado cultural e histórico de extrema riqueza, espalhado em mais de 50 países.",
+			"countriesCount": 54,
+			"languagesCount": 2000,
 			"imageUrl": "https://images.unsplash.com/photo-1580060839134-75a5edca2e99?q=80&w=1742&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
 			"mostVisitedCities": [
 				{
-					"city": "Cairo",
-					"country": "Egito",
-					"countryFlagUrl": "https://flagcdn.com/w320/eg.png"
+					"name": "Cairo",
+					"imageUrl": "https://images.unsplash.com/photo-1597500993730-613ee0eab73b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+					"country": {
+						"name": "Egito",
+						"flagUrl": "https://flagcdn.com/w320/eg.png"
+					}
 				},
 				{
-					"city": "Nairóbi",
-					"country": "Quênia",
-					"countryFlagUrl": "https://flagcdn.com/w320/ke.png"
+					"name": "Nairóbi",
+					"imageUrl": "https://images.unsplash.com/photo-1669127300649-940337f1487e?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+					"country": {
+						"name": "Quênia",
+						"flagUrl": "https://flagcdn.com/w320/ke.png"
+					}
 				},
 				{
-					"city": "Casablanca",
-					"country": "Marrocos",
-					"countryFlagUrl": "https://flagcdn.com/w320/ma.png"
+					"name": "Casablanca",
+					"imageUrl": "https://images.unsplash.com/photo-1710815759632-2d922bb933e7?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+					"country": {
+						"name": "Marrocos",
+						"flagUrl": "https://flagcdn.com/w320/ma.png"
+					}
 				},
 				{
-					"city": "Cidade do Cabo",
-					"country": "África do Sul",
-					"countryFlagUrl": "https://flagcdn.com/w320/za.png"
+					"name": "Cidade do Cabo",
+					"imageUrl": "https://images.unsplash.com/photo-1707854938026-d2165a78b1e6?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+					"country": {
+						"name": "África do Sul",
+						"flagUrl": "https://flagcdn.com/w320/za.png"
+					}
 				},
 				{
-					"city": "Acra",
-					"country": "Gana",
-					"countryFlagUrl": "https://flagcdn.com/w320/gh.png"
+					"name": "Acra",
+					"imageUrl": "https://images.unsplash.com/photo-1727023663928-1772e2c7e679?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+					"country": {
+						"name": "Gana",
+						"flagUrl": "https://flagcdn.com/w320/gh.png"
+					}
 				},
 				{
-					"city": "Lagos",
-					"country": "Nigéria",
-					"countryFlagUrl": "https://flagcdn.com/w320/ng.png"
+					"name": "Lagos",
+					"imageUrl": "https://images.unsplash.com/photo-1648023200358-9dc050df521d?q=80&w=2061&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+					"country": {
+						"name": "Nigéria",
+						"flagUrl": "https://flagcdn.com/w320/ng.png"
+					}
 				},
 				{
-					"city": "Addis Abeba",
-					"country": "Etiópia",
-					"countryFlagUrl": "https://flagcdn.com/w320/et.png"
+					"name": "Addis Abeba",
+					"imageUrl": "https://images.unsplash.com/photo-1701686040220-58db6cb0e551?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+					"country": {
+						"name": "Etiópia",
+						"flagUrl": "https://flagcdn.com/w320/et.png"
+					}
 				},
 				{
-					"city": "Pretória",
-					"country": "África do Sul",
-					"countryFlagUrl": "https://flagcdn.com/w320/za.png"
+					"name": "Pretória",
+					"imageUrl": "https://images.unsplash.com/photo-1599641084223-1f4005486783?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+					"country": {
+						"name": "África do Sul",
+						"flagUrl": "https://flagcdn.com/w320/za.png"
+					}
 				},
 				{
-					"city": "Harare",
-					"country": "Zimbábue",
-					"countryFlagUrl": "https://flagcdn.com/w320/zw.png"
+					"name": "Harare",
+					"imageUrl": "https://images.unsplash.com/photo-1698157126635-07ddf3a1f25e?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+					"country": {
+						"name": "Zimbábue",
+						"flagUrl": "https://flagcdn.com/w320/zw.png"
+					}
 				},
 				{
-					"city": "Kinshasa",
-					"country": "República Democrática do Congo",
-					"countryFlagUrl": "https://flagcdn.com/w320/cd.png"
+					"name": "Kinshasa",
+					"imageUrl": "https://images.unsplash.com/photo-1695071622156-e2c293906645?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+					"country": {
+						"name": "República Democrática do Congo",
+						"flagUrl": "https://flagcdn.com/w320/cd.png"
+					}
 				}
 			]
 		},
@@ -289,52 +451,82 @@
 			"id": "oceania",
 			"name": "Oceania",
 			"description": "Onde o horizonte toca o infinito.",
+			"about": "A Oceania é um dos seis continentes, localizado no hemisfério sul e rodeado pelo Oceano Pacífico. Este continente é composto pela Austrália, Nova Zelândia e inúmeras ilhas e arquipélagos, incluindo a Melanésia, Micronésia e Polinésia. Conhecida por sua biodiversidade única e cultura indígena fascinante, a Oceania é marcada tanto por paisagens naturais exuberantes quanto por uma rica herança cultural, que reflete a diversidade de povos que habitam essas ilhas.",
+			"countriesCount": 14,
+			"languagesCount": 1200,
 			"imageUrl": "https://images.unsplash.com/photo-1656177054067-e18d932a7ee7?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
 			"mostVisitedCities": [
 				{
-					"city": "Sydney",
-					"country": "Austrália",
-					"countryFlagUrl": "https://flagcdn.com/w320/au.png"
+					"name": "Sydney",
+					"imageUrl": "https://images.unsplash.com/photo-1506973035872-a4ec16b8e8d9?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+					"country": {
+						"name": "Austrália",
+						"flagUrl": "https://flagcdn.com/w320/au.png"
+					}
 				},
 				{
-					"city": "Auckland",
-					"country": "Nova Zelândia",
-					"countryFlagUrl": "https://flagcdn.com/w320/nz.png"
+					"name": "Auckland",
+					"imageUrl": "https://images.unsplash.com/photo-1507699622108-4be3abd695ad?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+					"country": {
+						"name": "Nova Zelândia",
+						"flagUrl": "https://flagcdn.com/w320/nz.png"
+					}
 				},
 				{
-					"city": "Melbourne",
-					"country": "Austrália",
-					"countryFlagUrl": "https://flagcdn.com/w320/au.png"
+					"name": "Melbourne",
+					"imageUrl": "https://images.unsplash.com/photo-1470294402047-fc1b5f39bd99?q=80&w=2074&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+					"country": {
+						"name": "Austrália",
+						"flagUrl": "https://flagcdn.com/w320/au.png"
+					}
 				},
 				{
-					"city": "Brisbane",
-					"country": "Austrália",
-					"countryFlagUrl": "https://flagcdn.com/w320/au.png"
+					"name": "Brisbane",
+					"imageUrl": "https://images.unsplash.com/photo-1566734904496-9309bb1798ae?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+					"country": {
+						"name": "Austrália",
+						"flagUrl": "https://flagcdn.com/w320/au.png"
+					}
 				},
 				{
-					"city": "Suva",
-					"country": "Fiji",
-					"countryFlagUrl": "https://flagcdn.com/w320/fj.png"
+					"name": "Suva",
+					"imageUrl": "https://images.unsplash.com/photo-1588893349799-d0c637fafb61?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+					"country": {
+						"name": "Fiji",
+						"flagUrl": "https://flagcdn.com/w320/fj.png"
+					}
 				},
 				{
-					"city": "Wellington",
-					"country": "Nova Zelândia",
-					"countryFlagUrl": "https://flagcdn.com/w320/nz.png"
+					"name": "Wellington",
+					"imageUrl": "https://images.unsplash.com/photo-1657673601193-b5da1c47bdc8?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+					"country": {
+						"name": "Nova Zelândia",
+						"flagUrl": "https://flagcdn.com/w320/nz.png"
+					}
 				},
 				{
-					"city": "Canberra",
-					"country": "Austrália",
-					"countryFlagUrl": "https://flagcdn.com/w320/au.png"
+					"name": "Canberra",
+					"imageUrl": "https://images.unsplash.com/photo-1615448019830-7cca23678f30?q=80&w=1776&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+					"country": {
+						"name": "Austrália",
+						"flagUrl": "https://flagcdn.com/w320/au.png"
+					}
 				},
 				{
-					"city": "Noumea",
-					"country": "Nova Caledônia",
-					"countryFlagUrl": "https://flagcdn.com/w320/nc.png"
+					"name": "Noumea",
+					"imageUrl": "https://images.unsplash.com/photo-1727811205978-51e658ba467e?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+					"country": {
+						"name": "Nova Caledônia",
+						"flagUrl": "https://flagcdn.com/w320/nc.png"
+					}
 				},
 				{
-					"city": "Port Moresby",
-					"country": "Papua-Nova Guiné",
-					"countryFlagUrl": "https://flagcdn.com/w320/pg.png"
+					"name": "Port Moresby",
+					"imageUrl": "https://images.unsplash.com/photo-1613183919710-2ff7b3bec845?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+					"country": {
+						"name": "Papua-Nova Guiné",
+						"flagUrl": "https://flagcdn.com/w320/pg.png"
+					}
 				}
 			]
 		}
