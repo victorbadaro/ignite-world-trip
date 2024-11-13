@@ -1,11 +1,12 @@
 import { Box, Center, Divider, Flex, Heading, Image, Text, VStack } from '@chakra-ui/react';
 import type { GetStaticProps, InferGetStaticPropsType } from 'next';
+import Link from 'next/link';
 import { SwiperSlide } from 'swiper/react';
 import { Slider } from '../components/slider';
 import { api } from '../services/api';
 
 type Continent = {
-	id: number;
+	id: string;
 	name: string;
 	description: string;
 	imageUrl: string;
@@ -78,17 +79,21 @@ export default function Home({ continents }: InferGetStaticPropsType<typeof getS
 				<Slider loop={continents.length > 0}>
 					{continents.map((continent) => (
 						<SwiperSlide key={continent.id}>
-							<Image w="100%" h="100%" objectFit="cover" src={continent.imageUrl} alt={continent.name} />
-							<Flex position="absolute" top="0" left="0" w="100%" h="100%" align="center" justify="center" bgColor="rgb(28, 20, 1, 0.35)">
-								<VStack spacing="4">
-									<Heading fontSize="5xl" fontWeight="bold" color="gray.100">
-										{continent.name}
-									</Heading>
-									<Text fontSize="2xl" fontWeight="bold" color="gray.200">
-										{continent.description}
-									</Text>
-								</VStack>
-							</Flex>
+							<Link href={`/continent/${continent.id}`}>
+								<a>
+									<Image w="100%" h="100%" objectFit="cover" src={continent.imageUrl} alt={continent.name} />
+									<Flex position="absolute" top="0" left="0" w="100%" h="100%" align="center" justify="center" bgColor="rgb(28, 20, 1, 0.35)">
+										<VStack spacing="4">
+											<Heading fontSize="5xl" fontWeight="bold" color="gray.100">
+												{continent.name}
+											</Heading>
+											<Text fontSize="2xl" fontWeight="bold" color="gray.200">
+												{continent.description}
+											</Text>
+										</VStack>
+									</Flex>
+								</a>
+							</Link>
 						</SwiperSlide>
 					))}
 				</Slider>
