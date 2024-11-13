@@ -12,3 +12,12 @@
 .swiper-slide {
 	position: relative;
 }
+
+@media (max-width: 720px) {
+	.swiper {
+		--swiper-pagination-bullet-width: 8px;
+		--swiper-pagination-bullet-height: 8px;
+		--swiper-navigation-size: 16px;
+		--swiper-navigation-sides-offset: 24px;
+	}
+}
