@@ -12,7 +12,7 @@ export function Header() {
 
 	return (
 		<Flex align="center" h={['50px', '100px']} bgColor="gray.100">
-			<Flex flex="1" position="relative" align="center" justify="center" mx="auto" maxW="1160px">
+			<Flex flex="1" position="relative" align="center" justify="center" mx="auto" maxW={['343px', '1160px']}>
 				{asPath !== '/' && (
 					<Link href="/" passHref>
 						<ChakraLink as="a" position="absolute" left="0" color="gray.800">
