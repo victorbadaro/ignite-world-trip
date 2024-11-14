@@ -1,4 +1,18 @@
-import { Box, Flex, Heading, Image, SimpleGrid, Text, Tooltip, useBreakpointValue } from '@chakra-ui/react';
+import {
+	Box,
+	Flex,
+	Heading,
+	Image,
+	Modal,
+	ModalBody,
+	ModalContent,
+	ModalOverlay,
+	SimpleGrid,
+	Text,
+	Tooltip,
+	useBreakpointValue,
+	useDisclosure
+} from '@chakra-ui/react';
 import type { GetStaticPaths, GetStaticProps, InferGetStaticPropsType } from 'next';
 import { FiInfo } from 'react-icons/fi';
 import { CityListItem } from '../../components/city-list-item';
@@ -24,6 +38,7 @@ type Continent = {
 };
 
 export default function Continent({ continent }: InferGetStaticPropsType<typeof getStaticProps>) {
+	const { isOpen, onOpen, onClose } = useDisclosure();
 	const isLargeScreenSize = useBreakpointValue({
 		base: false,
 		lg: true
@@ -80,11 +95,27 @@ export default function Continent({ continent }: InferGetStaticPropsType<typeof 
 								cidades +100
 							</Text>
 							<Box pb="2.5">
-								<Tooltip hasArrow label="cidades mais visitadas do mundo" bgColor="gray.800" color="gray.100">
-									<Box cursor="pointer" color="gray.700" opacity={0.5}>
-										<FiInfo size={isLargeScreenSize ? 16 : 10} />
-									</Box>
-								</Tooltip>
+								{isLargeScreenSize ? (
+									<Tooltip hasArrow label="cidades mais visitadas do mundo" bgColor="gray.800" color="gray.100">
+										<Box cursor="pointer" color="gray.700" opacity={0.5}>
+											<FiInfo size={16} />
+										</Box>
+									</Tooltip>
+								) : (
+									<>
+										<Box cursor="pointer" color="gray.700" opacity={0.5} onClick={onOpen}>
+											<FiInfo size={10} />
+										</Box>
+										<Modal isOpen={isOpen} onClose={onClose} size="xs" isCentered motionPreset="scale">
+											<ModalOverlay />
+											<ModalContent bgColor="gray.800" color="gray.100">
+												<ModalBody>
+													<Text>cidades mais visitadas do mundo</Text>
+												</ModalBody>
+											</ModalContent>
+										</Modal>
+									</>
+								)}
 							</Box>
 						</Flex>
 					</Flex>
@@ -111,9 +142,18 @@ export default function Continent({ continent }: InferGetStaticPropsType<typeof 
 	);
 }
 
-export const getStaticPaths: GetStaticPaths = async () => {
+export const getStaticPaths: GetStaticPaths<{ slug: string }> = async () => {
+	const response = await api.get<Continent[]>('/continents');
+	const continents = response.data;
+
+	const staticPaths = continents.map((continent) => ({
+		params: {
+			slug: continent.id
+		}
+	}));
+
 	return {
-		paths: [],
+		paths: staticPaths,
 		fallback: 'blocking'
 	};
 };
