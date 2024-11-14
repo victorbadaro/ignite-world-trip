@@ -39,7 +39,7 @@ export default function Home({ continents }: InferGetStaticPropsType<typeof getS
 				<Slider loop={continents.length > 0}>
 					{continents.map((continent) => (
 						<SwiperSlide key={continent.id}>
-							<SlideContent continent={continent} />
+							<SlideContent linkUrl={`/continent/${continent.id}`} imageUrl={continent.imageUrl} title={continent.name} subtitle={continent.description} />
 						</SwiperSlide>
 					))}
 				</Slider>
