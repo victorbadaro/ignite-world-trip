@@ -1,4 +1,5 @@
-import { Box, Flex, Image, Text, useBreakpointValue } from '@chakra-ui/react';
+import { Box, Flex, Text, useBreakpointValue } from '@chakra-ui/react';
+import Image from 'next/image';
 
 export function FeaturedAttributes() {
 	const isLargeScreenSize = useBreakpointValue({
@@ -9,25 +10,25 @@ export function FeaturedAttributes() {
 	return isLargeScreenSize ? (
 		<Flex align="center" justify="space-between">
 			<Flex flexDir="column" align="center" gap="6">
-				<Image src="/images/cocktail.svg" alt="Cocktail" />
+				<Image src="/images/cocktail.svg" alt="Coquetel" width={85} height={85} />
 				<Text fontWeight="semibold" fontSize="2xl">
 					vida noturna
 				</Text>
 			</Flex>
 			<Flex flexDir="column" align="center" gap="6">
-				<Image src="/images/surf.svg" alt="Cocktail" />
+				<Image src="/images/surf.svg" alt="Surfe" width={85} height={85} />
 				<Text fontWeight="semibold" fontSize="2xl">
 					praia
 				</Text>
 			</Flex>
 			<Flex flexDir="column" align="center" gap="6">
-				<Image src="/images/building.svg" alt="Cocktail" />
+				<Image src="/images/building.svg" alt="Prédio" width={85} height={85} />
 				<Text fontWeight="semibold" fontSize="2xl">
 					moderno
 				</Text>
 			</Flex>
 			<Flex flexDir="column" align="center" gap="6">
-				<Image src="/images/museum.svg" alt="Cocktail" />
+				<Image src="/images/museum.svg" alt="Museu" width={85} height={85} />
 				<Text fontWeight="semibold" fontSize="2xl">
 					clássico
 				</Text>

@@ -1,4 +1,5 @@
-import { Box, Flex, Heading, Image, Text, useBreakpointValue, VStack } from '@chakra-ui/react';
+import { Box, Flex, Heading, Text, useBreakpointValue, VStack } from '@chakra-ui/react';
+import Image from 'next/image';
 
 export function MainBanner() {
 	const isLargeScreenSize = useBreakpointValue({
@@ -21,7 +22,7 @@ export function MainBanner() {
 				</VStack>
 
 				<Box>
-					<Image src="/images/Airplane.svg" alt="Airplane" />
+					<Image src="/images/Airplane.svg" alt="Airplane" width={417} height={270} />
 				</Box>
 			</Flex>
 		</Flex>

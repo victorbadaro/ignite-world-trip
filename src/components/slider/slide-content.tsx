@@ -1,4 +1,5 @@
-import { Flex, Heading, Image, Text, VStack } from '@chakra-ui/react';
+import { Flex, Heading, Link as ChakraLink, Text, VStack } from '@chakra-ui/react';
+import Image from 'next/image';
 import Link from 'next/link';
 
 interface SlideContentProps {
@@ -11,8 +12,8 @@ interface SlideContentProps {
 export function SlideContent({ linkUrl, imageUrl, title, subtitle }: SlideContentProps) {
 	return (
 		<Link href={linkUrl}>
-			<a>
-				<Image w="100%" h="100%" objectFit="cover" src={imageUrl} alt={title} />
+			<ChakraLink display="block" position="relative" w="100%" h="100%">
+				<Image src={imageUrl} alt={title} layout="fill" objectFit="cover" loading="eager" priority />
 				<Flex position="absolute" top="0" left="0" w="100%" h="100%" align="center" justify="center" bgColor="rgb(28, 20, 1, 0.35)">
 					<VStack spacing={['3', '4']}>
 						<Heading fontSize={['2xl', '5xl']} fontWeight="bold" color="gray.100">
@@ -23,7 +24,7 @@ export function SlideContent({ linkUrl, imageUrl, title, subtitle }: SlideConten
 						</Text>
 					</VStack>
 				</Flex>
-			</a>
+			</ChakraLink>
 		</Link>
 	);
 }

@@ -1,4 +1,5 @@
-import { Box, Flex, Image, Text } from '@chakra-ui/react';
+import { Box, Flex, Img, Text } from '@chakra-ui/react';
+import Image from 'next/image';
 
 interface CityListItemProps {
 	cityName: string;
@@ -10,7 +11,7 @@ interface CityListItemProps {
 export function CitiesListItem({ cityName, cityImageUrl, countryName, countryFlagImageUrl }: CityListItemProps) {
 	return (
 		<Flex flexDir="column" w="256px" h="279px" borderRadius="base" overflow="hidden">
-			<Image w="100%" h="172px" objectFit="cover" src={cityImageUrl} alt={cityName} />
+			<Image src={cityImageUrl} alt={cityName} width={256} height={172} objectFit="cover" loading="lazy" />
 			<Flex
 				flex="1"
 				align="center"
@@ -34,7 +35,7 @@ export function CitiesListItem({ cityName, cityImageUrl, countryName, countryFla
 					</Text>
 				</Box>
 
-				<Image w="30px" h="30px" borderRadius="full" objectFit="cover" src={countryFlagImageUrl} alt={countryName} />
+				<Img boxSize="30px" borderRadius="full" objectFit="cover" src={countryFlagImageUrl} alt={countryName} />
 			</Flex>
 		</Flex>
 	);
