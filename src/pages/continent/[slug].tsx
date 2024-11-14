@@ -5,7 +5,7 @@ import { ContinentAbout } from '../../components/continent/continent-about';
 import { ContinentBanner } from '../../components/continent/continent-banner';
 import { api } from '../../services/api';
 
-export type City = {
+type City = {
 	name: string;
 	imageUrl: string;
 	country: {
@@ -14,7 +14,7 @@ export type City = {
 	};
 };
 
-export type Continent = {
+type Continent = {
 	id: string;
 	name: string;
 	about: string;
@@ -27,7 +27,7 @@ export type Continent = {
 export default function Continent({ continent }: InferGetStaticPropsType<typeof getStaticProps>) {
 	return (
 		<Box as="main" pb={['4', '35px']}>
-			<ContinentBanner continent={continent} />
+			<ContinentBanner text={continent.name} imageUrl={continent.imageUrl} />
 
 			<Box mx="auto" mt={['6', '20']} px={['4', '0']} maxW="1160px">
 				<ContinentAbout

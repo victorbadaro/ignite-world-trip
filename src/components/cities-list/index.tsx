@@ -1,6 +1,14 @@
 import { SimpleGrid } from '@chakra-ui/react';
-import type { City } from '../../pages/continent/[slug]';
 import { CitiesListItem } from './cities-list-item';
+
+type City = {
+	name: string;
+	imageUrl: string;
+	country: {
+		name: string;
+		flagUrl: string;
+	};
+};
 
 interface CitiesListProps {
 	cities: City[];
