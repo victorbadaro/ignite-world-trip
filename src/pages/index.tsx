@@ -1,11 +1,13 @@
-import { Box, Center, Divider, Flex, Heading, Image, Text, useBreakpointValue, VStack } from '@chakra-ui/react';
+import { Box, Center, Divider, Text } from '@chakra-ui/react';
 import type { GetStaticProps, InferGetStaticPropsType } from 'next';
-import Link from 'next/link';
 import { SwiperSlide } from 'swiper/react';
+import { FeaturedAttributes } from '../components/featured-attributes';
+import { MainBanner } from '../components/main-banner';
 import { Slider } from '../components/slider';
+import { SlideContent } from '../components/slider/slide-content';
 import { api } from '../services/api';
 
-type Continent = {
+export type Continent = {
 	id: string;
 	name: string;
 	description: string;
@@ -13,115 +15,12 @@ type Continent = {
 };
 
 export default function Home({ continents }: InferGetStaticPropsType<typeof getStaticProps>) {
-	const isLargeScreenSize = useBreakpointValue({
-		base: false,
-		lg: true
-	});
-
 	return (
 		<Box pb={['6', '10']}>
-			{isLargeScreenSize ? (
-				<Flex align="flex-end" mx="auto" maxW="1440px" h="335px" bgImage="/images/Background.png" bgRepeat="no-repeat" bgColor="yellow.500">
-					<Flex flex="1" align="flex-start" justify="space-between" mx="auto" mb="-33px" maxW="1160px">
-						<VStack spacing="5" align="flex-start" mt="27px" maxW="524px">
-							<Heading fontWeight="medium" color="gray.100">
-								6 Continentes,
-								<br />
-								infinitas possibilidades.
-							</Heading>
-							<Text fontSize="xl" color="gray.200">
-								Chegou a hora de tirar do papel a viagem que você sempre sonhou.
-							</Text>
-						</VStack>
-
-						<Box>
-							<Image src="/images/Airplane.svg" alt="Airplane" />
-						</Box>
-					</Flex>
-				</Flex>
-			) : (
-				<Flex align="center" mx="auto" px="4" maxW="1440px" h="163px" bgImage="/images/Background.png" bgRepeat="no-repeat" bgColor="yellow.500">
-					<VStack spacing={['2', '5']} align="flex-start">
-						<Heading fontSize="xl" fontWeight="medium" color="gray.100">
-							6 Continentes,
-							<br />
-							infinitas possibilidades.
-						</Heading>
-						<Text fontSize="sm" fontWeight="normal" color="gray.200">
-							Chegou a hora de tirar do papel a viagem que você sempre sonhou.
-						</Text>
-					</VStack>
-				</Flex>
-			)}
+			<MainBanner />
 
 			<Box mx="auto" mt={['9', '114px']} mb={['5', '52px']} px={['39px', '0']} maxW="1160px">
-				{isLargeScreenSize ? (
-					<Flex align="center" justify="space-between">
-						<Flex flexDir="column" align="center" gap="6">
-							<Image src="/images/cocktail.svg" alt="Cocktail" />
-							<Text fontWeight="semibold" fontSize="2xl">
-								vida noturna
-							</Text>
-						</Flex>
-						<Flex flexDir="column" align="center" gap="6">
-							<Image src="/images/surf.svg" alt="Cocktail" />
-							<Text fontWeight="semibold" fontSize="2xl">
-								praia
-							</Text>
-						</Flex>
-						<Flex flexDir="column" align="center" gap="6">
-							<Image src="/images/building.svg" alt="Cocktail" />
-							<Text fontWeight="semibold" fontSize="2xl">
-								moderno
-							</Text>
-						</Flex>
-						<Flex flexDir="column" align="center" gap="6">
-							<Image src="/images/museum.svg" alt="Cocktail" />
-							<Text fontWeight="semibold" fontSize="2xl">
-								clássico
-							</Text>
-						</Flex>
-					</Flex>
-				) : (
-					<Box w="275px" mx="auto">
-						<Flex align="center" justify="space-between">
-							<Flex align="center" justify="center" columnGap="2">
-								<Box w="2" h="2" borderRadius="full" bgColor="yellow.500" />
-								<Text fontWeight="medium" fontSize="lg">
-									vida noturna
-								</Text>
-							</Flex>
-							<Flex align="center" justify="center" columnGap="2">
-								<Box w="2" h="2" borderRadius="full" bgColor="yellow.500" />
-								<Text fontWeight="medium" fontSize="lg">
-									praia
-								</Text>
-							</Flex>
-						</Flex>
-
-						<Flex align="center" justify="space-between">
-							<Flex align="center" justify="center" columnGap="2">
-								<Box w="2" h="2" borderRadius="full" bgColor="yellow.500" />
-								<Text fontWeight="medium" fontSize="lg">
-									moderno
-								</Text>
-							</Flex>
-							<Flex align="center" justify="center" columnGap="2">
-								<Box w="2" h="2" borderRadius="full" bgColor="yellow.500" />
-								<Text fontWeight="medium" fontSize="lg">
-									clássico
-								</Text>
-							</Flex>
-						</Flex>
-
-						<Flex align="center" justify="center" columnGap="2" mt="6">
-							<Box w="2" h="2" borderRadius="full" bgColor="yellow.500" />
-							<Text fontWeight="medium" fontSize="lg">
-								e mais...
-							</Text>
-						</Flex>
-					</Box>
-				)}
+				<FeaturedAttributes />
 
 				<Center mt={['9', '20']}>
 					<Box w={['60px', '90px']}>
@@ -140,21 +39,7 @@ export default function Home({ continents }: InferGetStaticPropsType<typeof getS
 				<Slider loop={continents.length > 0}>
 					{continents.map((continent) => (
 						<SwiperSlide key={continent.id}>
-							<Link href={`/continent/${continent.id}`}>
-								<a>
-									<Image w="100%" h="100%" objectFit="cover" src={continent.imageUrl} alt={continent.name} />
-									<Flex position="absolute" top="0" left="0" w="100%" h="100%" align="center" justify="center" bgColor="rgb(28, 20, 1, 0.35)">
-										<VStack spacing={['3', '4']}>
-											<Heading fontSize={['2xl', '5xl']} fontWeight="bold" color="gray.100">
-												{continent.name}
-											</Heading>
-											<Text fontSize={['sm', '2xl']} fontWeight="bold" color="gray.200">
-												{continent.description}
-											</Text>
-										</VStack>
-									</Flex>
-								</a>
-							</Link>
+							<SlideContent continent={continent} />
 						</SwiperSlide>
 					))}
 				</Slider>
