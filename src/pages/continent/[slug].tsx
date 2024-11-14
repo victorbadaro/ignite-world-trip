@@ -1,4 +1,4 @@
-import { Box, Flex, Heading, Image, SimpleGrid, Text, Tooltip } from '@chakra-ui/react';
+import { Box, Flex, Heading, Image, SimpleGrid, Text, Tooltip, useBreakpointValue } from '@chakra-ui/react';
 import type { GetStaticPaths, GetStaticProps, InferGetStaticPropsType } from 'next';
 import { FiInfo } from 'react-icons/fi';
 import { CityListItem } from '../../components/city-list-item';
@@ -24,43 +24,56 @@ type Continent = {
 };
 
 export default function Continent({ continent }: InferGetStaticPropsType<typeof getStaticProps>) {
+	const isLargeScreenSize = useBreakpointValue({
+		base: false,
+		lg: true
+	});
+
 	return (
-		<Box as="main" pb="35px">
-			<Box position="relative" mx="auto" maxW="1440px" h="500px">
+		<Box as="main" pb={['4', '35px']}>
+			<Box position="relative" mx="auto" maxW="1440px" h={['150px', '500px']}>
 				<Image w="100%" h="100%" objectFit="cover" src={continent.imageUrl} alt={continent.name} />
 
-				<Box position="absolute" top="0" left="0" px="140px" py="59px" w="100%" h="100%" bgColor="rgb(28, 20, 1, 0.35)">
-					<Flex h="100%" align="flex-end">
-						<Heading fontSize="5xl" fontWeight="semibold" color="gray.100">
+				{isLargeScreenSize ? (
+					<Box position="absolute" top="0" left="0" px="140px" py="59px" w="100%" h="100%" bgColor="rgb(28, 20, 1, 0.35)">
+						<Flex h="100%" align="flex-end">
+							<Heading fontSize="5xl" fontWeight="semibold" color="gray.100">
+								{continent.name}
+							</Heading>
+						</Flex>
+					</Box>
+				) : (
+					<Flex position="absolute" top="0" left="0" w="100%" h="100%" align="center" justify="center" bgColor="rgb(28, 20, 1, 0.35)">
+						<Heading fontSize="28px" fontWeight="semibold" color="gray.100">
 							{continent.name}
 						</Heading>
 					</Flex>
-				</Box>
+				)}
 			</Box>
 
-			<Box mx="auto" mt="20" maxW="1160px">
-				<Flex align="center" justify="space-between" columnGap="70px">
-					<Text fontSize="2xl" textAlign="justify">
+			<Box mx="auto" mt={['6', '20']} px={['4', '0']} maxW="1160px">
+				<Flex flexDir={['column', 'row']} align="center" justify="space-between" columnGap={['0', '70px']} rowGap={['4', '0']}>
+					<Text fontSize={['sm', '2xl']} textAlign="justify">
 						{continent.about}
 					</Text>
-					<Flex align="center" justify="space-between" columnGap="42px">
-						<Text textAlign="center" fontSize="2xl" fontWeight="semibold">
-							<Text as="span" fontSize="5xl" color="yellow.500">
+					<Flex alignSelf={['stretch', 'auto']} align="center" justify="space-between" columnGap={['0', '42px']}>
+						<Text textAlign={['start', 'center']} fontSize={['lg', '2xl']} fontWeight={['normal', 'semibold']}>
+							<Text as="span" fontSize={['2xl', '5xl']} fontWeight="semibold" color="yellow.500">
 								{continent.countriesCount}
 							</Text>
 							<br />
 							países
 						</Text>
-						<Text textAlign="center" fontSize="2xl" fontWeight="semibold">
-							<Text as="span" fontSize="5xl" color="yellow.500">
+						<Text textAlign={['start', 'center']} fontSize={['lg', '2xl']} fontWeight={['normal', 'semibold']}>
+							<Text as="span" fontSize={['2xl', '5xl']} fontWeight="semibold" color="yellow.500">
 								{continent.languagesCount}
 							</Text>
 							<br />
 							línguas
 						</Text>
 						<Flex align="flex-end" justify="space-between" columnGap="5px" minW="fit-content">
-							<Text textAlign="center" fontSize="2xl" fontWeight="semibold">
-								<Text as="span" fontSize="5xl" color="yellow.500">
+							<Text textAlign={['start', 'center']} fontSize={['lg', '2xl']} fontWeight={['normal', 'semibold']}>
+								<Text as="span" fontSize={['2xl', '5xl']} fontWeight="semibold" color="yellow.500">
 									{continent.mostVisitedCities.length}
 								</Text>
 								<br />
@@ -69,7 +82,7 @@ export default function Continent({ continent }: InferGetStaticPropsType<typeof 
 							<Box pb="2.5">
 								<Tooltip hasArrow label="cidades mais visitadas do mundo" bgColor="gray.800" color="gray.100">
 									<Box cursor="pointer" color="gray.700" opacity={0.5}>
-										<FiInfo size={16} />
+										<FiInfo size={isLargeScreenSize ? 16 : 10} />
 									</Box>
 								</Tooltip>
 							</Box>
@@ -77,11 +90,11 @@ export default function Continent({ continent }: InferGetStaticPropsType<typeof 
 					</Flex>
 				</Flex>
 
-				<Box mt="20">
-					<Heading fontSize="4xl" fontWeight="medium">
+				<Box mt={['8', '20']}>
+					<Heading fontSize={['2xl', '4xl']} fontWeight="medium">
 						Cidades +100
 					</Heading>
-					<SimpleGrid mt="10" columnGap="45px" rowGap="12" minChildWidth="256px">
+					<SimpleGrid mt={['5', '10']} columnGap={['0', '45px']} rowGap={['5', '12']} minChildWidth="256px" justifyItems="center">
 						{continent.mostVisitedCities.map((city) => (
 							<CityListItem
 								key={city.name}

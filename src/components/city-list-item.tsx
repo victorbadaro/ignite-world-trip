@@ -9,7 +9,7 @@ interface CityListItemProps {
 
 export function CityListItem({ cityName, cityImageUrl, countryName, countryFlagImageUrl }: CityListItemProps) {
 	return (
-		<Flex flexDir="column" h="279px" borderRadius="base" overflow="hidden">
+		<Flex flexDir="column" w="256px" h="279px" borderRadius="base" overflow="hidden">
 			<Image w="100%" h="172px" objectFit="cover" src={cityImageUrl} alt={cityName} />
 			<Flex
 				flex="1"
@@ -29,7 +29,7 @@ export function CityListItem({ cityName, cityImageUrl, countryName, countryFlagI
 					<Text as="strong" fontSize="xl" fontWeight="semibold" lineHeight="25px">
 						{cityName}
 					</Text>
-					<Text mt="3" fontSize="lg" fontWeight="medium" lineHeight="26px" color="gray.700">
+					<Text mt="3" fontSize={['md', 'lg']} fontWeight="medium" lineHeight="26px" color="gray.700">
 						{countryName}
 					</Text>
 				</Box>
