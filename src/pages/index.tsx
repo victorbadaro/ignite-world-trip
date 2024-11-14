@@ -7,7 +7,7 @@ import { Slider } from '../components/slider';
 import { SlideContent } from '../components/slider/slide-content';
 import { api } from '../services/api';
 
-export type Continent = {
+type Continent = {
 	id: string;
 	name: string;
 	description: string;

@@ -7,7 +7,7 @@ interface CityListItemProps {
 	countryFlagImageUrl: string;
 }
 
-export function CityListItem({ cityName, cityImageUrl, countryName, countryFlagImageUrl }: CityListItemProps) {
+export function CitiesListItem({ cityName, cityImageUrl, countryName, countryFlagImageUrl }: CityListItemProps) {
 	return (
 		<Flex flexDir="column" w="256px" h="279px" borderRadius="base" overflow="hidden">
 			<Image w="100%" h="172px" objectFit="cover" src={cityImageUrl} alt={cityName} />
